@@ -13,8 +13,8 @@
             switch (installingWorker.state) {
               case 'installed':
                 if (navigator.serviceWorker.controller) { // eslint-disable-line compat/compat
-                  console.log('new update available')
-                  location.reload(true)
+                  console.log('ServiceWorker: New update available.')
+                  registration.update()
                 }
                 break
 
@@ -26,5 +26,7 @@
         console.log('ServiceWorker registration failed: ', err)
       })
     })
+  } else {
+    console.log('Service workers are not supported.')
   }
 }())
