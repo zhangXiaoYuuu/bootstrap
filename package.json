@@ -133,7 +133,9 @@
     "scss/"
   ],
   "browserslist": [
+    "last 2 major versions",
     "Chrome >= 45",
+    "Firefox >= 38",
     "Firefox ESR",
     "Edge >= 12",
     "Explorer >= 10",
